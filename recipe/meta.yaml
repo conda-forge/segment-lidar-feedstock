@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python ==3.9
+    - python >=3.9,<3.10
     - pip
     - setuptools
     - wheel
   run:
-    - python ==3.9
+    - python ==3.9,<3.10
 
 test:
   imports:
