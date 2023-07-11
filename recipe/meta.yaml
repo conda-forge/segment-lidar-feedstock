@@ -10,9 +10,9 @@ source:
   sha256: a5a60c2823c7c24d510ceccce93f365cb2585e9e75caefb1c59c5cbebdaff293
 
 build:
+  noarch: python
   number: 4
-  script: 
-    - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
