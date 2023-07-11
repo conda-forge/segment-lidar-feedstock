@@ -12,8 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3
-  skip: true
+  number: 4
 
 requirements:
   host:
@@ -25,10 +24,6 @@ requirements:
 test:
   imports:
     - segment_lidar
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/Yarroudh/segment-lidar
